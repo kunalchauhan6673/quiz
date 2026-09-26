@@ -1,0 +1,447 @@
+[
+    {
+        "question": "What will be the output of the given code when the user clicks a button?",
+        "code": "<body>\n<button onclick=\"myFunction(this);\">Test onclick attribute!</button>\n\n<script type=\"text/javascript\">\nfunction myFunction(button)\n{\n    document.write(button.getAttribute(\"onclick\"));\n}\n</script>\n</body>",
+        "options": [
+            "True",
+            "False",
+            "myFunction(this);",
+            "None of the given options"
+        ],
+        "answer": "myFunction(this);"
+    },
+    {
+        "question": "What will be the output of the given code?",
+        "code": "var my_arr = [3, 16, 2, 18];\n\nfunction myFunction(elem) {\n    return (elem + 5);\n}\n\ndocument.write(my_arr.map(myFunction));",
+        "options": [
+            "3, 16, 2, 18",
+            "8, 21, 7, 23",
+            "False",
+            "True"
+        ],
+        "answer": "8, 21, 7, 23"
+    },
+    {
+        "question": "Which of the following tags is used to define additional details that the user can view or hide in HTML?",
+        "options": [
+            "<detail ></detail>",
+            "<details ></details>",
+            "<record ></record>",
+            "None of the given options"
+        ],
+        "answer": "<details ></details>"
+    },
+    {
+        "question": "Identify the CSS3 code snippet that can be used to create the given shape.",
+        "options": [
+            ".shape1 { border-radius: 10px; border: 2px solid #404040; background-color: #ff9a2e; height: 50px; width: 50px; display: inline-block; margin: 5px; }",
+            ".shape1 { border-radius: 20px 0 20px 0; border: 2px solid #404040; background-color: #ff9a2e; height: 50px; width: 50px; display: inline-block; margin: 5px; }"
+        ],
+        "answer": null
+    },
+    {
+        "question": "Assume that a software system has a general Animal class and specific subclasses such as Dog and Cat. These subclasses inherit common properties and behaviors from Animal. Which Java class setup demonstrates inheritance in this case? Analyze the given choices and select the correct answer from the given choices.",
+        "options": [
+            "class Animal { void sound() { System.out.println(\"Animal sound\"); } } class Dog extends Animal { void sound() { System.out.println(\"Dog barks\"); } }",
+            "class Animal { void sound() {} } class Dog { void extends sound() { System.out.println(\"Dog barks\"); } }",
+            "class Animal { void sound() { System.out.println(\"Animal sound\"); } } class Dog inherits Animal { }"
+        ],
+        "answer": "class Animal { void sound() { System.out.println(\"Animal sound\"); } } class Dog extends Animal { void sound() { System.out.println(\"Dog barks\"); } }"
+    },
+    {
+        "question": "In a Web filtering service, the firewall stops the user's request from leaving the network. It then queries the Web filter and, based on the reply from the web filter, it allows or disallows the request. Which of the following is not a disadvantage of using this service?",
+        "options": [
+            "The Firewall System has to ensure that all requests made by users are copied to the web filter system and hence causing excess use of resources",
+            "There is a trust relationship which exists between the firewall system and the web filter and any malicious activity on one system is likely to affect the other system also",
+            "In case the web filter starts failing, the network connectivity of the system is tampered with because of the trust relationship that exists between web filters and firewall",
+            "A and C"
+        ],
+        "answer": null
+    },
+    {
+        "question": "Assume that a software developer is working on a certain code-based task. Which option denotes the relationship between the Car class and the myCar object? Select the correct answer from the given choices.",
+        "code": "public class Car {\n    private String make;\n    private String model;\n\n    public Car(String make, String model) {\n        this.make = make;\n        this.model = model;\n    }\n\n    public String getMake() { return make; }\n    public String getModel() { return model; }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Car myCar = new Car(\"Toyota\", \"Camry\");\n        System.out.println(\"My car is a \" + myCar.getMake() + \" \" + myCar.getModel());\n    }\n}",
+        "options": [
+            "Car is the class and myCar is an instance of the class",
+            "myCar is the class and Car is an instance of the class",
+            "Car and myCar are both instances of the same class",
+            "Car and myCar are unrelated concepts"
+        ],
+        "answer": "Car is the class and myCar is an instance of the class"
+    },
+    {
+        "question": "Assume that a Java application having a Java class name “TeaMac” that can handle different types of tea. The class has a method to boil tea based on the tea selected. A code is written as below. Which type of polymorphism is followed in the given code snippet? Analyze the given choices and select the correct answer.",
+        "code": "public class TeaMac {\n    public Coffee boilTea(ChooseTea choosed) {\n        switch (choosed) {\n            case GREEN_TEA:\n                return boilGreentea();\n            default:\n                // default code\n        }\n    }\n\n    public List boilTea(ChooseTea choosed) {\n        List teas = new ArrayList(number);\n        for (int i=0; i<number; i++) {\n            teas.add(boilTea(choosed));\n        }\n        return teas;\n    }\n}",
+        "options": [
+            "Static polymorphism",
+            "Dynamic polymorphism",
+            "Late binding",
+            "Method overriding"
+        ],
+        "answer": null
+    },
+    {
+        "question": "During the development of an application, a developer encounters an error message indicating that the API endpoint they are trying to access is not found. Which HTTP status code is most likely associated with this error?",
+        "options": [
+            "200",
+            "404",
+            "500",
+            "403"
+        ],
+        "answer": "404"
+    },
+    {
+        "question": "Consider that a public-facing API has undergone significant changes, including modifications to existing endpoints and data structures, making it incompatible with older client applications. The development team needs to deploy these changes without breaking the existing integrations. Which API versioning strategy is generally recommended for handling such breaking changes? Select the correct option from the given choices.",
+        "options": [
+            "Make the changes directly to the existing endpoints and update the clients",
+            "Use query parameters to specify the desired version (e.g., /api/resource)",
+            "Include the version number in the URL path (e.g., /api/v2/resource)",
+            "Use custom HTTP headers to specify the API version"
+        ],
+        "answer": "Include the version number in the URL path (e.g., /api/v2/resource)"
+    },
+    {
+        "question": "After a successful build in the Continuous Integration pipeline, assume that the compiled and packaged application (e.g. a JAR file, Docker image, or npm package) needs to be stored in a central, versioned repository. This ensures that only approved, tested, and immutable binaries are used for deployments to various environments (development, staging, production). Which DevOps building block addresses the secure storage, versioning, and retrieval of these build outputs? Select the correct option from the given choices.",
+        "options": [
+            "Source Code Management",
+            "Database Management",
+            "Artifact Management",
+            "Container Orchestration"
+        ],
+        "answer": "Artifact Management"
+    },
+    {
+        "question": "Assume that a company maintains an employee database. Each employee is identified by a unique EmployeeID, but sometimes, employees may change their PhoneNumber. While designing the Employee table, the developer is confused about which column should be chosen as the Primary Key. Which column is the correct choice for the Primary Key? Select the correct option from the given choices.",
+        "options": [
+            "Name",
+            "PhoneNumber",
+            "EmployeeID",
+            "Department"
+        ],
+        "answer": "EmployeeID"
+    },
+    {
+        "question": "Consider that two transactions run concurrently. Transaction A: UPDATE Products SET Stock = Stock - 1 WHERE ProductID = 1001; Transaction B: UPDATE Products SET Stock = Stock - 2 WHERE ProductID = 1001; Both succeed, but the final stock shows only the result of one update instead of both. Which concurrency issue is this?",
+        "options": [
+            "Phantom Read",
+            "Lost Update",
+            "Non-repeatable Read",
+            "Deadlock"
+        ],
+        "answer": "Lost Update"
+    },
+    {
+        "question": "During deployment, assume a DevOps engineer observes that a containerized application experiences high latency. What approach should the engineer take first to rectify the issue? Select the correct option from the given choices.",
+        "options": [
+            "Increase the CPU and memory limits",
+            "Analyze the network traffic and logs",
+            "Restart the container",
+            "Reduce the number of containers"
+        ],
+        "answer": "Analyze the network traffic and logs"
+    },
+    {
+        "question": "What is the main purpose of network segmentation in security? Analyze the given choices and select the correct answer.",
+        "options": [
+            "Increasing bandwidth by improving signal strength",
+            "Limiting the spread of attacks",
+            "Reducing latency"
+        ],
+        "answer": "Limiting the spread of attacks"
+    },
+    {
+        "question": "Consider that an organization is using a VPN solution that provides strong confidentiality (encryption) and data integrity/authentication for its sensitive communications. Which protocol is specifically designed to provide both these security services for the packet's payload and can operate in tunnel mode?",
+        "options": [
+            "Authentication Header (AH)",
+            "Internet Key Exchange (IKE)",
+            "Encapsulating Security Payload (ESP)",
+            "Generic Routing Encapsulation (GRE)"
+        ],
+        "answer": "Encapsulating Security Payload (ESP)"
+    },
+    {
+        "question": "Assume that an employee at a multinational organization is working from home due to some reason and needs to access the company's internal network to retrieve some files. Which type of Virtual Private Network (VPN) will be best suitable for this case?",
+        "options": [
+            "Remote-access VPN",
+            "Site-to-site VPN",
+            "MPLS VPN",
+            "P2P VPN"
+        ],
+        "answer": "Remote-access VPN"
+    },
+    {
+        "question": "Assume a network service requires fast, connectionless communication for simple query-response interactions, where the loss of packets is acceptable but retransmissions will introduce unacceptable delays. Which protocol is best suited for this type of service? Select the correct option from the given choices.",
+        "options": [
+            "HTTP",
+            "FTP",
+            "DNS",
+            "SMTP"
+        ],
+        "answer": "DNS"
+    },
+    {
+        "question": "During a video call, packets travel from one device to another across different networks. To ensure data arrives correctly and in the right order, which layer of the OSI Model is responsible for error-checking and reliable delivery?",
+        "options": [
+            "Physical Layer",
+            "Data Link Layer",
+            "Transport Layer",
+            "Network Layer"
+        ],
+        "answer": "Transport Layer"
+    },
+    {
+        "question": "Assume a mid-sized enterprise wants to deploy a firewall that not only filters traffic based on IP addresses, ports, and protocols but also tracks the state of active connections to ensure session integrity. They also prefer to avoid deploying multiple devices for different layers of filtering. Which type of firewall best meets these combined requirements? Select the correct answer from the given choices.",
+        "options": [
+            "A stateful packet inspection firewall",
+            "An application-layer firewall",
+            "A basic packet-filtering firewall",
+            "A software-only firewall without session tracking"
+        ],
+        "answer": "A stateful packet inspection firewall"
+    },
+    {
+        "question": "Consider that a growing business is searching for a hassle-free solution to access office productivity tools without the complexities of IT management. They aim for a cost-effective approach that allows seamless application delivery over the internet. Based on the scenario, which cloud computing use case would be most suitable for their requirement?",
+        "options": [
+            "Big Data Intelligence",
+            "Testing and Building Applications",
+            "Software as a Service",
+            "Intelligent Energy-Saving Methods"
+        ],
+        "answer": "Software as a Service"
+    },
+    {
+        "question": "Assume that a company is migrating its legacy data sources to a new cloud-based platform while maintaining operations without downtime. During the migration, they need to ensure that data from both the old and new systems can be accessed simultaneously for real-time reporting and analytics, with data being logically integrated without physical movement. Considering the requirements, which architectural layer would best handle the logical integration and seamless access to data from both environments, ensuring minimal disruption and secure data access? Analyze the given choices and select the correct answer.",
+        "options": [
+            "Connection layer using direct database access protocols",
+            "Consumption layer utilizing middleware with abstracted APIs",
+            "Abstraction layer that logically unifies disparate data sources",
+            "Data caching layer storing temporary data replicas"
+        ],
+        "answer": "Abstraction layer that logically unifies disparate data sources"
+    },
+    {
+        "question": "Assume that you have recently started working for an organization that is transitioning to a cloud-based infrastructure. As part of IT governance, you are responsible for ensuring data security in the cloud environment. You are aware of various cloud deployment models and need to choose the most secure option for your organization's sensitive data. In the context of IT governance and cloud security, which cloud deployment model is typically the most secure choice for organizations with highly sensitive data?",
+        "options": [
+            "Public Cloud",
+            "Private Cloud",
+            "Hybrid Cloud",
+            "Community Cloud"
+        ],
+        "answer": "Private Cloud"
+    },
+    {
+        "question": "What is the technology that allows multiple operating systems to run on a single physical machine? Analyze the given choices and select the correct answer.",
+        "options": [
+            "Virtualization",
+            "Containerization",
+            "Clustering",
+            "Replication"
+        ],
+        "answer": "Virtualization"
+    },
+    {
+        "question": "Which cloud model allows a customer to choose the operating system, influence network configurations, without managing the underlying infrastructure?",
+        "options": [
+            "SAAS",
+            "PAAS",
+            "IAAS",
+            "All the Given Options"
+        ],
+        "answer": "IAAS"
+    },
+    {
+        "question": "Consider that as part of the data center modernization initiative, the IT team is tasked with addressing storage challenges. The goal is to leverage existing storage devices from various vendors and integrate them with the next generation storage solutions. How does resource pooling play a crucial role in achieving elasticity in storage solutions for cloud computing? Select the correct answer from the given choices.",
+        "options": [
+            "By eliminating the need for server virtualization",
+            "By minimizing financial and contractual commitments",
+            "By ensuring a global-scale, reliable, and resilient storage solution",
+            "By optimizing capacity for executing code and running instances"
+        ],
+        "answer": "By ensuring a global-scale, reliable, and resilient storage solution"
+    },
+    {
+        "question": "Assume that an embedded system encrypts data using a substitution cipher with a key-driven method to minimize resource usage. After deployment, it is discovered that some characters in the encrypted text are not correctly decrypted, leading to data loss. What is the most likely cause of this issue? Analyze the given choices and select the correct answer.",
+        "options": [
+            "The decryption map incorrectly handles negative indices during character remapping.",
+            "The decryption process incorrectly uses the encryption key, leading to incorrect character mapping.",
+            "The encryption map creates duplicate character mappings due to key collision, causing data loss.",
+            "The length of the characters string causes an incorrect modulo operation during remapping, leading to data corruption."
+        ],
+        "answer": "The encryption map creates duplicate character mappings due to key collision, causing data loss."
+    },
+    {
+        "question": "Assume that in a corporate Wi-Fi setup, employees need secure access. Which EAP authentication method simplifies the process by using only server-side certificates? Select the correct answer from the given choices.",
+        "options": [
+            "EAP-MD-5",
+            "EAP-TLS",
+            "EAP-TTLS",
+            "PEAP"
+        ],
+        "answer": "PEAP"
+    },
+    {
+        "question": "Assume that you want to find the count of the total occurrences of a particular character in the FirstandLastName field. Which of the SQL queries is correctly related to the given case? Note: Suppose the character is 'm' and you need to fetch it from StudentDetails.",
+        "options": [
+            "FROM StudentDetails\nSELECT FirstandLastName,\nCOUNT(FirstandLastName) - COUNT(REPLACE(FirstandLastName, 'm', ''));",
+            "SELECT FirstandLastName,\nCOUNT(FirstandLastName) - COUNT(REPLACE(FirstandLastName, 'm', ''))\nFROM StudentDetails;",
+            "FROM StudentDetails\nSELECT FirstandLastName,\nLENGTH(FirstandLastName) - LENGTH(REPLACE(FirstandLastName, 'm', ''));",
+            "SELECT FirstandLastName,\nLENGTH(FirstandLastName) - LENGTH(REPLACE(FirstandLastName, 'm', ''))\nFROM StudentDetails;"
+        ],
+        "answer": "SELECT FirstandLastName,\nLENGTH(FirstandLastName) - LENGTH(REPLACE(FirstandLastName, 'm', ''))\nFROM StudentDetails;"
+    },
+    {
+        "question": "Assume that you want to fetch student names and mark records. In this case, you also want to display the student's details even if the marks record is absent. Which SQL query can be used to complete the desired task? Analyze the given choices and select the correct option.",
+        "options": [
+            "SELECT E.StudentName FROM M.Mark WHERE StudentDetails E LEFT JOIN GROUP BY StudentMark M IN E.StudentId = M.StudentId;",
+            "SELECT E.StudentName, M.Mark FROM StudentDetails E LEFT JOIN GROUP BY StudentMark M IN E.StudentId = M.StudentId;",
+            "SELECT E.StudentName, M.Mark FROM StudentDetails E LEFT JOIN StudentMark M ON E.StudentId = M.StudentId;"
+        ],
+        "answer": "SELECT E.StudentName, M.Mark FROM StudentDetails E LEFT JOIN StudentMark M ON E.StudentId = M.StudentId;"
+    },
+    {
+        "question": "Write pseudocode to initialize an array named ages with values [25, 30, 22, 28, 35] and print the second element of the array.",
+        "options": [
+            "ARRAY ages[5] = [25, 30, 22, 28, 35]\nPRINT ages[2]",
+            "ARRAY ages[5]\nages[1] = 25\nages[2] = 30\nages[3] = 22\nages[4] = 28\nages[5] = 35\nPRINT ages[2]",
+            "ARRAY ages[5] = [25, 30, 22, 28, 35]\nPRINT ages[1]"
+        ],
+        "answer": "ARRAY ages[5] = [25, 30, 22, 28, 35]\nPRINT ages[2]"
+    },
+    {
+        "question": "Which of the given options (as values for s) could possibly print the output as \"Valid\" in the following pseudocode?",
+        "code": "function validCheck(string s):\n    if s matches \"[a-zA-Z0-9]{6}\"\n        then print \"Valid\"\n    else\n        then print \"Not Valid\"\n    endif\nend function validCheck",
+        "options": [
+            "arun32",
+            "kkvarun32",
+            "arun$2",
+            "arun@2"
+        ],
+        "answer": "arun32"
+    },
+    {
+        "question": "What will be the output of the depicted pseudo code?",
+        "code": "Integer a,b,c\nSet a=8, b=5, c=6\n\nfor(each c from 3 to 4)\n    b=9+b\n    b=(b+7)+a\n    b=(b&4)+b\nEnd for\n\nPrint a+b",
+        "options": [
+            "78",
+            "69",
+            "55",
+            "65"
+        ],
+        "answer": "65"
+    },
+    {
+        "question": "What will be the output of the given pseudo code?",
+        "code": "Integer j\nInteger arr[2][2] = {{1, 2}, {2, 4}}\n\narr[0][1] = (arr[1][0] & arr[0][0]) & arr[1][1]\n\nif ((arr[0][0] - arr[0][1]) > (arr[1][1] + arr[0][1]))\n    arr[0][0] = (arr[1][1] + arr[1][1]) + arr[0][0]\nEnd if\n\narr[0][0] = (2+7) & arr[0][0]\n\nPrint arr[1][1] + arr[0][0]",
+        "options": [
+            "1.0",
+            "4.0",
+            "8.0",
+            "17.0"
+        ],
+        "answer": null
+    },
+    {
+        "question": "What will be the output of the following pseudo code for a=1, b=6, c=7?",
+        "code": "Integer funn(Integer a, Integer b, Integer c)\n\nif((a+8+c)<(6+a))\n    a=(a+b)+b\n\n    if((a+b+c)<(b+c+a))\n        a=c+c\n    Else\n        c=(c+a)+b\n    End if\n\n    c=7+b\nEnd if\n\nreturn a+b+c",
+        "options": [
+            "14",
+            "20",
+            "9",
+            "24"
+        ],
+        "answer": "14"
+    },
+    {
+        "question": "Assume a CPU needs to fetch an instruction from the main memory. Which physical component on the motherboard acts as the primary communication pathway for data, addresses, and control signals between the CPU, memory, and I/O devices? Select the correct option from the given choices.",
+        "options": [
+            "Peripheral Component Interconnect (PCI) slot",
+            "System Bus",
+            "CPU Register",
+            "Northbridge/Southbridge Chipset"
+        ],
+        "answer": "System Bus"
+    },
+    {
+        "question": "Suppose you want to implement a bus where the input-output devices are attached to the computer by wires. In this, the data transfer on a bus is carried out by electronic processes. Then the host controller sends messages to the device controller, and the device controller performs the operations. Which device will you choose if these device controllers consist of a built-in cache so that data transfer occurs faster?",
+        "options": [
+            "Enhanced interior drive electronics",
+            "Enhanced integrated drive electronics",
+            "Enhanced interior driver electronics",
+            "Enhanced integrated hard driver"
+        ],
+        "answer": "Enhanced integrated drive electronics"
+    },
+    {
+        "question": "You are designing the file management subsystem of an operating system. Besides creating, deleting, and manipulating files and directories, which additional function would significantly improve the system's ability to organize and access files efficiently?",
+        "options": [
+            "Implementing file compression techniques",
+            "Managing file permissions and access control",
+            "Supporting file encryption for security",
+            "Maintaining file backup and recovery mechanisms"
+        ],
+        "answer": "Managing file permissions and access control"
+    },
+    {
+        "question": "In MS PowerPoint, a presenter wants to automatically highlight key bullet points one by one after explaining each, without manually animating every bullet. What is the best feature to use?",
+        "options": [
+            "Apply a delay on each bullet animation.",
+            "Use the 'Appear' animation with trigger action.",
+            "Use the 'By Paragraph' animation option.",
+            "Group bullets and animate them with 'Wipe'."
+        ],
+        "answer": "Use the 'By Paragraph' animation option."
+    },
+    {
+        "question": "John is writing a report and needs to insert today's date without typing it manually. Which shortcut in MS Word allows him to do this?",
+        "options": [
+            "Alt + Shift + D",
+            "Ctrl + Shift + T",
+            "Ctrl + Alt + D",
+            "Shift + F5"
+        ],
+        "answer": "Alt + Shift + D"
+    },
+    {
+        "question": "In the dataset below, what is the result of the following formula? =INDEX(A2:A9, MATCH(MAX(C2:C9), C2:C9, 0))",
+        "code": "Product | Category | Unit Price | Units Sold | Discount % | Sale Date | Region\nLaptop | Electronics | 850 | 10 | 5 | 10-01-2023 | North\nMonitor | Electronics | 200 | 25 | 10 | 15-01-2023 | South\nMouse | Accessories | 25 | 100 | 0 | 01-02-2023 | North\nKeyboard | Accessories | 45 | 60 | 0 | 10-02-2023 | East\nPrinter | Electronics | 300 | 15 | 15 | 05-03-2023 | West\nTablet | Electronics | 500 | 20 | 5 | 15-03-2023 | South\nWebcam | Accessories | 50 | 40 | 0 | 01-04-2023 | North\nSpeaker | Accessories | 70 | 30 | 10 | 10-04-2023 | East",
+        "options": [
+            "Printer",
+            "Laptop",
+            "Mouse",
+            "Monitor"
+        ],
+        "answer": "Laptop"
+    },
+    {
+        "question": "Assume that you are employed by a company that has recently suffered a security breach in its computer systems. As the IT manager, you are assigned the responsibility of enhancing the company's operating system security. Which property of an operating system will you prioritize in order to achieve this goal? Select the correct answer from the given choices.",
+        "options": [
+            "Access control",
+            "User interface",
+            "Multitasking",
+            "Virtual memory"
+        ],
+        "answer": "Access control"
+    },
+    {
+        "question": "What will be the output of the following pseudo code for a=0, b=2, c=7?",
+        "code": "Integer funn(Integer a, Integer b, Integer c)\n\nif((a+c+b)<(3+b-a))\n    a=b+c\n\n    if((b+c+a)<(9+a+6))\n        a=(b+a)+b\n    Else\n        b=(3+4)+a\n    End if\n\n    c=(b+c)+c\nEnd if\n\nPrint a+b+c",
+        "options": [
+            "6",
+            "9",
+            "13",
+            "27"
+        ],
+        "answer": "9"
+    },
+    {
+        "question": "What will be the output of the following pseudo code?",
+        "code": "Integer p,q,r\nSet p=4, q=8, r=6\n\nif((p+r)>(q-p))\n    q=(q+7)+q\n\n    if((4+q^p)<(7+p+r))\n        p=(q^p)^r\n    Else\n        r=5+q\n    End if\nEnd if\n\nPrint p+q+r",
+        "options": [
+            "50",
+            "59",
+            "55",
+            "63"
+        ],
+        "answer": "59"
+    }
+]

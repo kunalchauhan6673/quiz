@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="theme-color" content="#0f1115">
+
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Quiz App</h1>
+            <span id="progress">Loading...</span>
+        </header>
+
+
+        <!-- Question Map -->
+        <section class="question-map" id="questionMapBox">
+
+            <div class="map-header">
+
+                <h2>Question Map</h2>
+
+                <button
+                    type="button"
+                    class="map-toggle"
+                    id="mapToggle"
+                    onclick="toggleMap()">
+                    Hide
+                </button>
+
+            </div>
+
+
+            <div class="map-content" id="mapContent">
+
+                <div id="questionMap"></div>
+
+                <div class="legend">
+
+                    <span>
+                        <i class="answered-dot"></i>
+                        Answered
+                    </span>
+
+                    <span>
+                        <i class="unanswered-dot"></i>
+                        Unanswered
+                    </span>
+
+                    <span>
+                        <i class="bookmarked-dot"></i>
+                        Bookmarked
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quiz -->
+        <section class="quiz">
+
+            <h2 id="questions">
+                Loading question...
+            </h2>
+
+            <div id="options"></div>
+
+
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    onclick="prev()">
+                    ← Previous
+                </button>
+
+                <button
+                    type="button"
+                    id="bookmarkBtn"
+                    onclick="bookmarkQuestion()">
+                    🔖 Bookmark
+                </button>
+
+                <button
+                    type="button"
+                    onclick="next()">
+                    Next →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+        <section id="scoreCard"></section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
